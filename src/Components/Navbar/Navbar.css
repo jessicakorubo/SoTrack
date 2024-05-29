@@ -45,12 +45,15 @@ li.nav-register:hover {
 
 @media screen and (max-width: 850px) {
     .nav {
+        position: relative;
+        overflow: hidden;
         margin: 40px 40px;
     }
     .nav-logo {
         font-size: 20px;
     }
     .nav-menu {
+        /* display: none; */
         background: linear-gradient(to right, black 50%, green);
         position: absolute;
         width: 80%;
@@ -67,6 +70,7 @@ li.nav-register:hover {
     }
     .nav-menu.open {
         left: 20%;
+        /* display: flex; */
     }
     .hamburger {
         display: block;

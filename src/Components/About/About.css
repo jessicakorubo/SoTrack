@@ -44,12 +44,16 @@
 @media screen and (max-width: 850px) {
     .about {
         margin-top: 170px;
+        padding: 20px 20px;
     }
    .about-content {
         flex-direction: column-reverse;
    }
    .about-text, .about-pic {
     width: 100%;
+   }
+   .about-points {
+    gap: 0;
    }
 }
 
