@@ -1,0 +1,59 @@
+.register {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-form-container  {
+    display: grid;
+    place-items: center;
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 40px;
+    background-color: rgb(181, 247, 181);
+}
+.register h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.register-form {
+    width: 100%;
+    height: 100%;
+}
+.register-form input {
+    width: 100%;
+}
+.register-pic img {
+    width: 400px;
+    width: 100%;
+}
+
+.submit-button {
+    margin-top: 30px;
+}
+.submit-button a{
+
+    background: #fff;
+    color: green;
+    border-radius: 15px;
+    padding: 8px 30px;
+    text-decoration: none;
+    margin-top: 30px;
+
+}
+
+.submit-button a:hover {
+    background: green;
+    color: white;
+}
+
+@media screen and (max-width: 850px) {
+    .register-form-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

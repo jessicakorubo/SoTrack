@@ -4,6 +4,7 @@
     align-items: center;
     margin: 40px 120px;
     color: white;
+    overflow-x: hidden;
 }
 
 .nav-logo {
@@ -18,11 +19,57 @@
     list-style-type: none;
     font-size: 18px;
     gap: 90px;
+    cursor: pointer;
+    color: #fff;
 }
 
-.nav-contact {
+.nav-menu>li:hover {
+    color: green;
+}
+
+.nav-register {
     border-radius: 50px;
     padding: 10px 38px;
     background: #fff;
     color: green;
+}
+li.nav-register:hover {
+    color: white;
+    background-color: green;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .nav {
+        margin: 40px 40px;
+    }
+    .nav-logo {
+        font-size: 20px;
+    }
+    .nav-menu {
+        background: linear-gradient(to right, black 50%, green);
+        position: absolute;
+        width: 80%;
+        top: 100px;
+        left: 100%;
+        height: fit-content;
+        padding: 90px 0;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: left 1s;
+        /* margin: 40px 60px; */
+    }
+    .nav-menu.open {
+        left: 20%;
+    }
+    .hamburger {
+        display: block;
+    }
+
 }

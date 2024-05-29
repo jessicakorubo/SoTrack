@@ -1,0 +1,60 @@
+.about {
+    margin-top: 100px;
+    /* background-image: url(../../assets/so-track-road.jpg); */
+    background-position: 90% 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: #fff; */
+    padding: 20px 45px;  
+}
+.about h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-points {
+    display: flex;
+    margin-top: 30px;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.about-point {
+    display: flex;
+    align-items: center;
+}
+.about-point p {
+    font-size: 13px;
+    margin-left: 5px;
+}
+.about-text, .about-pic {
+    width: 50%;
+}
+.about-pic img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 850px) {
+    .about {
+        margin-top: 170px;
+    }
+   .about-content {
+        flex-direction: column-reverse;
+   }
+   .about-text, .about-pic {
+    width: 100%;
+   }
+}
+
+@media screen and (min-height: 740px) {
+    .about {
+        margin-top: 350px;
+    }
+}

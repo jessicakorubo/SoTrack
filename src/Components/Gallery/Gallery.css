@@ -1,0 +1,25 @@
+.gallery {
+    text-align: center;
+}
+.gallery h1 {
+    color: green;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.photos img {
+    width: 300px;
+    height: 300px;
+}
+
+@media screen and (max-width: 850px) { 
+    .photos img {
+        width: 150px;
+        height: 150px;
+    }
+    .photos img:hover {
+        transform: scale(2);
+        transition: transform 1s;
+    }
+    
+}
