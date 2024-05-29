@@ -5,12 +5,13 @@ import icons_tick from '../../assets/icons-tick.png'
 
 const About = () => {
     return (
+       
         <div className='about'>
 
             <h1>About SO-track</h1>
 
             <div className="about-content">
-                <div className="about-text">
+                <div className="about-text" data-aos="flip-right">
 
                     <p>We are a driving school founded in 2005, and our services range from
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam

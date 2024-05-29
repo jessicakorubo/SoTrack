@@ -3,6 +3,10 @@ import './Contact.css';
 import email from '../../assets/envelope.png';
 import phone from '../../assets/phonecall.png';
 import location from '../../assets/location.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -42,24 +46,24 @@ export const Contact = () => {
                     </div>
                 </div>
                 <div className="contact-details">
-                    <div className='det-info'>
+                    <div className='det-info' >
                         <div className='con-icon'>
                             <img src={email} alt="" />
                         </div>
-                            <p>Sotrack@gmail.com</p>
+                            <p data-aos="zoom-out-down">Sotrack@gmail.com</p>
                             
                     </div>
                     <div className="det-info">
                         <div className='con-icon'>
                             <img src={location} alt="" />
                         </div>
-                        <p>NO 100, Dr Peter Odili Road, By roundabout, Odiliz Plaza</p>
+                        <p data-aos="zoom-out-down">NO 100, Dr Peter Odili Road, By roundabout, Odiliz Plaza</p>
                     </div>
                     <div className="det-info">
                         <div className='con-icon'>
                             <img src={phone} alt="" />
                         </div>
-                            <p>090382479232</p>
+                            <p data-aos="zoom-out-down">090382479232</p>
                     </div>
                    
                 </div>

@@ -1,5 +1,9 @@
 import React from 'react'
 import './Register.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 import sotrack_car from '../../assets/about-bg.png';
 
 const Register = () => {
@@ -9,7 +13,7 @@ const Register = () => {
             <div className="reg">
                 <div className="register-form-container">
 
-                    <div className="register-form">
+                    <div className="register-form" data-aos="zoom-in-up">
 
                         <div className='name'>
                             <label htmlFor="">Name</label> <br />
@@ -40,7 +44,7 @@ const Register = () => {
                         </div>
 
                     </div>
-                    <div className="register-pic">
+                    <div className="register-pic" data-aos="zoom-out-down">
                         <img src={sotrack_car} alt="" />
                     </div>
                 </div>
