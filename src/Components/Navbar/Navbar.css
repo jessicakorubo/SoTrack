@@ -4,7 +4,7 @@
     align-items: center;
     margin: 40px 120px;
     color: white;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .nav-logo {
@@ -45,8 +45,7 @@ li.nav-register:hover {
 
 @media screen and (max-width: 850px) {
     .nav {
-        /* position: relative; */
-        overflow: hidden;
+        position:relative;
         margin: 40px 40px;
     }
     .nav-logo {
@@ -56,21 +55,26 @@ li.nav-register:hover {
         /* display: none; */
         background: linear-gradient(to right, black 50%, green);
         position: absolute;
-        width: 80%;
+        width: 100%;
         top: 100px;
-        left: 100%;
+        left: 0;
         height: fit-content;
         padding: 90px 0;
         gap: 40px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        transition: left 1s;
+        /* transform: translateX(100%); */
+        opacity: 0;
+        transition: transform 1s ease, opacity 1s ease;
+        visibility: hidden;
         /* margin: 40px 60px; */
     }
     .nav-menu.open {
-        left: 20%;
-        /* display: flex; */
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        transition: transform 1s ease, opacity 1s ease;
     }
     .hamburger {
         display: block;
