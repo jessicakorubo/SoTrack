@@ -45,7 +45,7 @@ li.nav-register:hover {
 
 @media screen and (max-width: 850px) {
     .nav {
-        position: relative;
+        /* position: relative; */
         overflow: hidden;
         margin: 40px 40px;
     }
