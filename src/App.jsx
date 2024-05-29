@@ -7,6 +7,8 @@ import Services from "./Components/Services/Services";
 import Register from "./Components/Register/Register";
 import Gallery from "./Components/Gallery/Gallery";
 import './App.css';
+import { Contact } from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 
 
 function App() {
@@ -37,6 +39,8 @@ function App() {
       <Services />
       <Register />
       <Gallery />
+      <Contact />
+      <Footer />
     </div>
   )
 }
