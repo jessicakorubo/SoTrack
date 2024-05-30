@@ -57,7 +57,7 @@ export const Contact = () => {
                         <div className='con-icon'>
                             <img src={location} alt="" />
                         </div>
-                        <p data-aos="zoom-out-down">NO 100, Dr Peter Odili Road, By roundabout, Odiliz Plaza</p>
+                        <p data-aos="zoom-out-down">NO 100, Dr Peter Odili Road, By roundabout, Obidave Plaza</p>
                     </div>
                     <div className="det-info">
                         <div className='con-icon'>
